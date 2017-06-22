@@ -1,0 +1,16 @@
+﻿<cfcomponent output="false">
+	<cfset this.name = "ProjectColdFusion"/>
+	<cfset this.applicationTimeout = createTimespan(0,2,0,0)/>
+	<cfset this.datasource = "Project_DataSource"/>
+	<cfset this.sessionManagement = "yes"/>
+	<cfset this.sessionTimeout = createTimespan(0,0,10,0)/>
+	
+	<cffunction name="readSesssionInfo" returntype="boolean" output="true">
+		<cfloop collection="#Session#" item="values">
+			<cfoutput>
+				#values# : #Session[values]#<br>
+			</cfoutput>
+		</cfloop>
+		<cfreturn true>		
+	</cffunction>
+</cfcomponent>

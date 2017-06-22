@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.aptana.ide.logging.viewer.section">
+		<list key="org.aptana.ide.logging.viewer.section.tabs.names">
+		</list>
+		<list key="org.aptana.ide.logging.viewer.section.tabs.uris">
+		</list>
+		<list key="org.aptana.ide.logging.viewer.section.tabs.supportsErasing">
+		</list>
+	</section>
+</section>

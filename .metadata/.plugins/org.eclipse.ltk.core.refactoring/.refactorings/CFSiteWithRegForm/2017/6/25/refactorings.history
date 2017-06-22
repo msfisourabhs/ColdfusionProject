@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CFSiteWithRegForm/login&apos; to &apos;user&apos;" description="Rename resource &apos;login&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="login" name="user" stamp="1498113282698" updateReferences="true"/>
+</session>

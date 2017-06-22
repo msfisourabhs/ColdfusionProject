@@ -1,0 +1,18 @@
+window.onload = addHandlers();	
+function addHandlers(){
+	var email = $("#email_address");
+	email.addEventListener("blur", checkEmail);
+	email.addEventListener("focus", clearErrors);
+	
+	var password = $("#password");
+	//password.addEventListener("blur", checkPass);
+	//password.addEventListener("focus", clearErrors);
+}
+function checkPass()
+{
+	
+	return;
+	
+}
+
+

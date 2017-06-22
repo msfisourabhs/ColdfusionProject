@@ -1,0 +1,3 @@
+﻿<cfcomponent output="true">
+	<cfdump var="#form#">
+</cfcomponent>

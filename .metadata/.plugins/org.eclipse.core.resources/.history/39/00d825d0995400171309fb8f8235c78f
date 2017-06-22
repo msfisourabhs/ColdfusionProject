@@ -1,0 +1,28 @@
+﻿<cfdump var="#url#">
+<cfif StructKeyExists(url,"uid")>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="stylesheet/home.css">
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#Profile">Profile</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="">Logout</a></li>
+</ul>
+
+<!---Welcome Message--->
+	<cfquery datasource="Project_DataSource" name="nmName">
+		SELECT FirstName,LastName
+		FROM dbo.Users_Details
+		WHERE uid = '#url.uid#'
+	</cfquery>
+	<cfoutput query="nmName">
+		<h1>Welcome #nmName.FirstName# #nmName.LastName#</h1>
+	</cfoutput>
+</body>
+</html>
+</cfif>

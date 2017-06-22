@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ColdFusion Search Dailog">
+		<item value="&gt;&gt;" key="SEARCH_TEXT"/>
+		<item value="false" key="STORE_IS_RDS"/>
+		<item value="*" key="STORE_EXTENSIONS"/>
+		<item value="false" key="SEARCH_DERIVED"/>
+		<item value="false" key="STORE_IS_FTP"/>
+		<item value="1" key="SEARCH_SCOPE"/>
+		<item value="cfinput" key="REPLACE_TEXT"/>
+		<item value="false" key="CASE_SENSITIVE"/>
+		<item value="false" key="STORE_SEARCH_INCREMENTAL"/>
+		<item value="false" key="STORE_SEARCH_WRAP"/>
+		<item value="false" key="REG_EX_SEARCH"/>
+		<item value="false" key="STORE_WHOLE_WORD"/>
+		<item value="false" key="STORE_SEARCH_BACKWARD"/>
+		<item value="false" key="SEARCH_MULTILINE"/>
+		<item value="" key="STORE_CONNECTION_NAME"/>
+		<item value="false" key="IGNORE_WHITESPACE_SEARCH"/>
+		<item value="0" key="HISTORY_SIZE"/>
+		<list key="findhistory">
+			<item value="&gt;&gt;"/>
+			<item value="user already"/>
+			<item value="user"/>
+			<item value="errors"/>
+			<item value="cfdump"/>
+			<item value="validateName"/>
+			<item value="validate"/>
+			<item value="input"/>
+		</list>
+		<list key="replacehistory">
+			<item value="cfinput"/>
+			<item value="input"/>
+		</list>
+	</section>
+	<section name="org.eclipse.search.text.CFFileSearchResultPage">
+	</section>
+	<section name="com.adobe.ide.coldfusion.search.ui.CFSearchDialog_dialogBounds">
+	</section>
+	<section name="ReplaceDialog3">
+		<list key="replace_with">
+			<item value="cfinput"/>
+		</list>
+	</section>
+</section>

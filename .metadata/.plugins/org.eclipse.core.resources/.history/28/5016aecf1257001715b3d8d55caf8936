@@ -1,0 +1,7 @@
+﻿<cfcomponent output="true">
+	<cffunction name="onRequestStart" >
+		<cfif StructKeyExists(form,"user_email") AND StructKeyExists(form,"user_password")>
+			<cfdump var="#form#">
+		</cfif>
+	</cffunction>>
+</cfcomponent>

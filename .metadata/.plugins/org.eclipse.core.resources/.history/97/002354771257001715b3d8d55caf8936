@@ -1,0 +1,5 @@
+﻿<cfcomponent output="true">
+	<cffunction name="onRequest" >
+		<cfdump var="#form#">
+	</cffunction>>
+</cfcomponent>

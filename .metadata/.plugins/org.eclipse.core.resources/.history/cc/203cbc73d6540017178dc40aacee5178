@@ -1,0 +1,7 @@
+﻿<cfdump var="#url#">
+<cfquery datasource="dbo.Users_Details">
+	UPDATE dbo.Users_Details 
+	SET isActive = 0 
+	WHERE uid = #nmLogin.uid#	
+</cfquery>
+<cflocation url="login.cfm">

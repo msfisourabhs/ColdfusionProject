@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CFSites/index_cfm.cfm&apos; to &apos;index.cfm&apos;" description="Rename resource &apos;index_cfm.cfm&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="index_cfm.cfm" name="index.cfm" stamp="1497247866008" updateReferences="true"/>
+</session>

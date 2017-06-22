@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench version="2.0">
+<workbenchAdvisor/>
+<window height="728" maximized="true" width="1024" x="104" y="0">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.adobe.ide.coldfusion.ui.OpenProjectActionSet" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.adobe.ide.coldfusion.ui.openCFCDialog" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.aptana.ide.editors.actionSet" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.adobe.rds.QueryEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.ide.editors.JSEditor" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.aptana.ide.editors.CSSEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.ide.editors.HTMLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.adobe.ide.editor.CFMLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.adobe.ide.coldfusion.startup.startpage.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1497245930865" focus="true" label="&lt;Unknown Label&gt; - ColdFusion">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="7"/>
+<part id="6"/>
+<part id="5"/>
+<part id="8"/>
+<part id="9"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor activePart="true" focus="true" id="com.adobe.ide.editor.CFMLEditor" name="login.cfm" partName="login.cfm" path="C:/ColdFusion10/cfusion/wwwroot/Projects/CFSiteWithRegForm/user/login.cfm" title="/CFSiteWithRegForm/user/login.cfm" tooltip="CFSiteWithRegForm/user/login.cfm" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CFSiteWithRegForm/user/login.cfm"/>
+</editor>
+<editor id="com.adobe.ide.editor.CFMLEditor" name="index.cfm" partName="index.cfm" path="C:/ColdFusion10/cfusion/wwwroot/Projects/CFSiteWithRegForm/index.cfm" title="/CFSiteWithRegForm/index.cfm" tooltip="CFSiteWithRegForm/index.cfm" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CFSiteWithRegForm/index.cfm"/>
+</editor>
+<editor id="com.aptana.ide.editors.JSEditor" name="login.js" partName="login.js" path="C:/ColdFusion10/cfusion/wwwroot/Projects/CFSiteWithRegForm/js/login.js" title="login.js" tooltip="CFSiteWithRegForm/js/login.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CFSiteWithRegForm/js/login.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.ide.editors.JSEditor" name="script.js" partName="script.js" path="C:/ColdFusion10/cfusion/wwwroot/Projects/CFSiteWithRegForm/js/script.js" title="script.js" tooltip="CFSiteWithRegForm/js/script.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CFSiteWithRegForm/js/script.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8319" selectionTopPixel="4590"/>
+</editor>
+<editor id="com.adobe.ide.editor.CFMLEditor" name="userDetailEntryService.cfc" partName="userDetailEntryService.cfc" path="C:/ColdFusion10/cfusion/wwwroot/Projects/CFSiteWithRegForm/components/userDetailEntryService.cfc" title="/CFSiteWithRegForm/components/userDetailEntryService.cfc" tooltip="CFSiteWithRegForm/components/userDetailEntryService.cfc" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CFSiteWithRegForm/components/userDetailEntryService.cfc"/>
+</editor>
+<editor id="com.adobe.ide.editor.CFMLEditor" name="Application.cfc" partName="Application.cfc" path="C:/ColdFusion10/cfusion/wwwroot/Projects/CFSiteWithRegForm/Application.cfc" title="/CFSiteWithRegForm/Application.cfc" tooltip="CFSiteWithRegForm/Application.cfc" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CFSiteWithRegForm/Application.cfc"/>
+</editor>
+<editor id="com.adobe.rds.QueryEditor" name="RDS Query Viewer" partName="RDS Query Viewer" path="C:/ColdFusion10/cfusion/wwwroot/Projects/CFSiteWithRegForm/.rdsTempFiles/RDS Query Viewer" title="RDS Query Viewer" tooltip="CFSiteWithRegForm/.rdsTempFiles/RDS Query Viewer" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="CFSiteWithRegForm/.rdsTempFiles/RDS Query Viewer"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.adobe.ide.editor.CFMLEditor" name="Application.cfc" partName="Application.cfc" path="C:/ColdFusion10/cfusion/wwwroot/Projects/CFSiteWithRegForm/user/Application.cfc" title="/CFSiteWithRegForm/user/Application.cfc" tooltip="CFSiteWithRegForm/user/Application.cfc" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CFSiteWithRegForm/user/Application.cfc"/>
+</editor>
+<editor id="com.adobe.ide.editor.CFMLEditor" name="home.cfm" partName="home.cfm" path="C:/ColdFusion10/cfusion/wwwroot/Projects/CFSiteWithRegForm/user/home.cfm" title="/CFSiteWithRegForm/user/home.cfm" tooltip="CFSiteWithRegForm/user/home.cfm" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CFSiteWithRegForm/user/home.cfm"/>
+</editor>
+<editor id="com.adobe.ide.editor.CFMLEditor" name="logout.cfm" partName="logout.cfm" path="C:/ColdFusion10/cfusion/wwwroot/Projects/CFSiteWithRegForm/user/logout.cfm" title="/CFSiteWithRegForm/user/logout.cfm" tooltip="CFSiteWithRegForm/user/logout.cfm" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/CFSiteWithRegForm/user/logout.cfm"/>
+</editor>
+</editors>
+<views>
+<view id="com.aptana.ide.server.ui.serversView" partName="Servers">
+<viewState/>
+</view>
+<view id="com.aptana.ide.js.ui.views.FileExplorerView" partName="File">
+<viewState/>
+</view>
+<view id="com.adobe.rds.client.core.views.DatabaseView" partName="RDS Dataview">
+<viewState/>
+</view>
+<view id="com.adobe.rds.client.views.FileView" partName="RDS Fileview"/>
+<view id="org.eclipse.ui.views.ResourceNavigator" partName="Navigator">
+<viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
+<filters>
+<filter element=".project" isEnabled="true"/>
+<filter element=".settings" isEnabled="true"/>
+<filter element=".DS_Store" isEnabled="true"/>
+<filter element="settings.xml" isEnabled="true"/>
+<filter element="*.cfc" isEnabled="false"/>
+<filter element="*.cfm" isEnabled="false"/>
+<filter element="*.cfml" isEnabled="false"/>
+<filter element="*.css" isEnabled="false"/>
+<filter element="*.gif" isEnabled="false"/>
+<filter element="*.htm" isEnabled="false"/>
+<filter element="*.html" isEnabled="false"/>
+<filter element="*.js" isEnabled="false"/>
+<filter element="*.lck" isEnabled="false"/>
+<filter element="*.log" isEnabled="false"/>
+<filter element="*.swf" isEnabled="false"/>
+<filter element="*.txt" isEnabled="false"/>
+<filter element=".tmp*~" isEnabled="true"/>
+<filter element="*.class" isEnabled="false"/>
+<filter element=".*" isEnabled="false"/>
+</filters>
+<expanded>
+<element path="/CFSiteWithRegForm"/>
+<element path="/CFSiteWithRegForm/components"/>
+<element path="/CFSiteWithRegForm/js"/>
+<element path="/CFSiteWithRegForm/stylesheet"/>
+<element path="/CFSiteWithRegForm/user"/>
+</expanded>
+<selection>
+<element path="/CFSiteWithRegForm"/>
+</selection>
+</viewState>
+</view>
+<view id="com.adobe.ide.coldfusion.appcodegeneration.extensionview" partName="Extensions">
+<viewState/>
+</view>
+<view id="com.aptana.ide.logging.LogView" partName="TailView">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.resourceField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors (2 items)"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="362"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+<DESCENDING_FIELDS IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<DESCENDING_FIELDS IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="com.adobe.coldfusion.servicebrowser.views.servicebrowser" partName="Services Browser">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.ui.views.ResourceNavigator" activePerspective="com.adobe.ide.coldfusion.perspective.CFML">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.adobe.ide.coldfusion.ui.perspective.CFPerspective" id="com.adobe.ide.coldfusion.perspective.CFML" label="ColdFusion"/>
+<alwaysOnActionSet id="com.adobe.ide.amt"/>
+<alwaysOnActionSet id="com.adobe.ide.coldfusion.search.coldfusion"/>
+<alwaysOnActionSet id="openstartpage"/>
+<alwaysOnActionSet id="com.adobe.ide.coldfusion.ui.OpenProjectActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="com.adobe.ide.coldfusion.ui.openCFCDialog"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<show_view_action id="com.aptana.ide.js.ui.views.FileExplorerView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="com.aptana.ide.js.ui.views.problemsView"/>
+<show_view_action id="com.aptana.ide.server.ui.serversView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.adobe.ide.coldfusion.views.snippets"/>
+<show_view_action id="com.adobe.rds.client.views.DatabaseView"/>
+<show_view_action id="com.adobe.rds.client.views.FileView"/>
+<show_view_action id="com.aptana.ide.logging.LogView"/>
+<show_view_action id="com.adobe.coldfusion.servicebrowser.views.servicebrowser"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<new_wizard_action id="com.adobe.ide.coldfusion.ui.CFML"/>
+<new_wizard_action id="com.adobe.ide.coldfusion.CFC"/>
+<new_wizard_action id="com.adobe.ide.coldfusion.CFInterface"/>
+<new_wizard_action id="com.adobe.ide.coldfusion.CFProject"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.views.ResourceNavigator"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="com.adobe.rds.client.core.views.DatabaseView"/>
+<view id="com.adobe.rds.client.views.FileView"/>
+<view id="com.aptana.ide.server.ui.serversView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="com.aptana.ide.logging.LogView"/>
+<view id="com.adobe.coldfusion.servicebrowser.views.servicebrowser"/>
+<view id="com.adobe.ide.coldfusion.appcodegeneration.extensionview"/>
+<view id="com.aptana.ide.js.ui.views.FileExplorerView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.ui.views.ResourceNavigator" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ResourceNavigator" label="Navigator"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.2" ratioLeft="200" ratioRight="800" relationship="2" relative="left"/>
+<info folder="true" part="right" ratio="0.7144097" ratioLeft="823" ratioRight="329" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.adobe.rds.client.core.views.DatabaseView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="com.adobe.rds.client.core.views.DatabaseView" label="RDS Dataview"/>
+<page content="com.adobe.rds.client.views.FileView" label="RDS Fileview"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="rightBottom" ratio="0.6496599" ratioLeft="382" ratioRight="206" relationship="4" relative="right">
+<folder appearance="2" expanded="2">
+<page content="com.adobe.ide.coldfusion.views.snippets" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="bottom" ratio="0.79931974" ratioLeft="470" ratioRight="118" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<page content="com.aptana.ide.server.ui.serversView" label="Servers"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="com.aptana.ide.logging.LogView" label="TailView"/>
+<page content="com.adobe.coldfusion.servicebrowser.views.servicebrowser" label="Services Browser"/>
+<page content="com.adobe.ide.coldfusion.appcodegeneration.extensionview" label="Extensions"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="leftBottom" ratio="0.6989796" ratioLeft="411" ratioRight="177" relationship="4" relative="left">
+<folder activePageID="com.aptana.ide.js.ui.views.FileExplorerView" appearance="2" expanded="2">
+<page content="com.aptana.ide.js.ui.views.FileExplorerView" label="File"/>
+<page content="com.aptana.ide.js.ui.views.FileExplorerView:*" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" path="/CFSiteWithRegForm/Application.cfc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" path="/CFSiteWithRegForm/login/Application.cfc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" path="/CFSiteWithRegForm/login/login.cfm"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" path="/CFSiteWithRegForm/login/home.cfm"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" path="/CFSiteWithRegForm/user/Application.cfc"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" path="/CFSiteWithRegForm/user/login.cfm"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" path="/CFSiteWithRegForm/user/home.cfm"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.CSSEditor" path="/CFSiteWithRegForm/stylesheet/home.css"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" path="/CFSiteWithRegForm/user/home.cfm"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" path="/CFSiteWithRegForm/user/logout.cfm"/>
+</editors>
+<item historyLabel="/CFSiteWithRegForm/login/Application.cfc" index="1"/>
+<item historyLabel="/CFSiteWithRegForm/Application.cfc" index="0"/>
+<item historyLabel="/CFSiteWithRegForm/login/login.cfm" index="2"/>
+<item historyLabel="/CFSiteWithRegForm/Application.cfc" index="0"/>
+<item historyLabel="/CFSiteWithRegForm/login/Application.cfc" index="1"/>
+<item historyLabel="/CFSiteWithRegForm/login/login.cfm" index="2"/>
+<item historyLabel="/CFSiteWithRegForm/Application.cfc" index="0"/>
+<item historyLabel="/CFSiteWithRegForm/login/Application.cfc" index="1"/>
+<item historyLabel="/CFSiteWithRegForm/Application.cfc" index="0"/>
+<item historyLabel="/CFSiteWithRegForm/login/Application.cfc" index="1"/>
+<item historyLabel="/CFSiteWithRegForm/Application.cfc" index="0"/>
+<item historyLabel="/CFSiteWithRegForm/login/Application.cfc" index="1"/>
+<item historyLabel="/CFSiteWithRegForm/login/home.cfm" index="3">
+<position info="not_deleted" x="133" y="0"/>
+</item>
+<item historyLabel="/CFSiteWithRegForm/user/Application.cfc" index="4">
+<position info="not_deleted" x="720" y="0"/>
+</item>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5">
+<position info="not_deleted" x="1400" y="0"/>
+</item>
+<item historyLabel="/CFSiteWithRegForm/user/home.cfm" index="6">
+<position info="not_deleted" x="133" y="0"/>
+</item>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+<item historyLabel="/CFSiteWithRegForm/Application.cfc" index="0"/>
+<item historyLabel="/CFSiteWithRegForm/user/Application.cfc" index="4"/>
+<item historyLabel="/CFSiteWithRegForm/user/home.cfm" index="6"/>
+<item historyLabel="/CFSiteWithRegForm/Application.cfc" index="0"/>
+<item historyLabel="/CFSiteWithRegForm/user/home.cfm" index="6"/>
+<item historyLabel="/CFSiteWithRegForm/user/Application.cfc" index="4"/>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+<item historyLabel="/CFSiteWithRegForm/user/Application.cfc" index="4"/>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+<item historyLabel="home.css" index="7"/>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+<item historyLabel="/CFSiteWithRegForm/user/home.cfm" index="8"/>
+<item historyLabel="/CFSiteWithRegForm/user/logout.cfm" index="9"/>
+<item historyLabel="/CFSiteWithRegForm/user/home.cfm" index="8"/>
+<item historyLabel="/CFSiteWithRegForm/user/logout.cfm" index="9"/>
+<item historyLabel="/CFSiteWithRegForm/user/home.cfm" index="8"/>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+<item historyLabel="/CFSiteWithRegForm/user/Application.cfc" index="4"/>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+<item historyLabel="/CFSiteWithRegForm/user/Application.cfc" index="4"/>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+<item historyLabel="/CFSiteWithRegForm/user/Application.cfc" index="4"/>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+<item historyLabel="/CFSiteWithRegForm/user/Application.cfc" index="4"/>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+<item historyLabel="/CFSiteWithRegForm/user/Application.cfc" index="4"/>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+<item historyLabel="/CFSiteWithRegForm/user/Application.cfc" index="4"/>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+<item historyLabel="/CFSiteWithRegForm/user/Application.cfc" index="4"/>
+<item historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+<item historyLabel="/CFSiteWithRegForm/user/Application.cfc" index="4"/>
+<item active="true" historyLabel="/CFSiteWithRegForm/user/login.cfm" index="5"/>
+</navigationHistory>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" name="logout.cfm" tooltip="CFSiteWithRegForm/user/logout.cfm">
+<persistable path="/CFSiteWithRegForm/user/logout.cfm"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" name="home.cfm" tooltip="CFSiteWithRegForm/user/home.cfm">
+<persistable path="/CFSiteWithRegForm/user/home.cfm"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.CSSEditor" name="home.css" tooltip="CFSiteWithRegForm/stylesheet/home.css">
+<persistable path="/CFSiteWithRegForm/stylesheet/home.css"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" name="Application.cfc" tooltip="CFSiteWithRegForm/login/Application.cfc">
+<persistable path="/CFSiteWithRegForm/login/Application.cfc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.rds.QueryEditor" name="RDS Query Viewer" tooltip="CFSiteWithRegForm/.rdsTempFiles/RDS Query Viewer">
+<persistable path="CFSiteWithRegForm/.rdsTempFiles/RDS Query Viewer"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" name="home.cfm" tooltip="CFSiteWithRegForm/home.cfm">
+<persistable path="/CFSiteWithRegForm/home.cfm"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" name="Application.cfc" tooltip="CFSiteWithRegForm/Application.cfc">
+<persistable path="/CFSiteWithRegForm/Application.cfc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" name="userDetailEntryService.cfc" tooltip="CFSiteWithRegForm/components/userDetailEntryService.cfc">
+<persistable path="/CFSiteWithRegForm/components/userDetailEntryService.cfc"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.JSEditor" name="script.js" tooltip="CFSiteWithRegForm/js/script.js">
+<persistable path="/CFSiteWithRegForm/js/script.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.ide.editors.JSEditor" name="login.js" tooltip="CFSiteWithRegForm/js/login.js">
+<persistable path="/CFSiteWithRegForm/js/login.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" name="index.cfm" tooltip="CFSiteWithRegForm/index.cfm">
+<persistable path="/CFSiteWithRegForm/index.cfm"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" name="login.cfm" tooltip="CFSiteWithRegForm/login.cfm">
+<persistable path="/CFSiteWithRegForm/login.cfm"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" name="regResult.cfm" tooltip="CFSiteWithRegForm/regResult.cfm">
+<persistable path="/CFSiteWithRegForm/regResult.cfm"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" name="actionPage.cfm" tooltip="CFSiteWithRegForm/actionPage.cfm">
+<persistable path="/CFSiteWithRegForm/actionPage.cfm"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.adobe.ide.editor.CFMLEditor" name="fieldValidationService.cfc" tooltip="CFSiteWithRegForm/components/fieldValidationService.cfc">
+<persistable path="/CFSiteWithRegForm/components/fieldValidationService.cfc"/>
+</file>
+</mruList>
+</workbench>
