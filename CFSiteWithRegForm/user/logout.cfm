@@ -1,9 +1,14 @@
-﻿
-<cfquery datasource="Project_DataSource">
+﻿<!----
+	Filename 		: 	home.cfm
+ 	Functionality	:	Logs out users
+ 						Invalidate sessions and Session.id variable
+	Creation Date	:	‎June ‎22, ‎2017, ‏‎2:42:59 PM
+
+--->
+<cfquery datasource = "Project_DataSource">
 	UPDATE dbo.Users_Details 
 	SET isActive = 0 
-	WHERE uid = #Session.id#	
+	WHERE uid = #SESSION.id#	
 </cfquery>
-<cflogout >
-
-<cflocation url="login.cfm" addtoken="false">
+<cfset #Sessioninvalidate()#>
+<cflocation url = "login.cfm" addtoken = "false">

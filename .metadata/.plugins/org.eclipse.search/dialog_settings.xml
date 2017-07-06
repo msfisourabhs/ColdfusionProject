@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="ColdFusion Search Dailog">
-		<item value="&gt;&gt;" key="SEARCH_TEXT"/>
+		<item value="temp" key="SEARCH_TEXT"/>
 		<item value="false" key="STORE_IS_RDS"/>
 		<item value="*" key="STORE_EXTENSIONS"/>
 		<item value="false" key="SEARCH_DERIVED"/>
 		<item value="false" key="STORE_IS_FTP"/>
 		<item value="1" key="SEARCH_SCOPE"/>
-		<item value="cfinput" key="REPLACE_TEXT"/>
+		<item value="modifiedValue" key="REPLACE_TEXT"/>
 		<item value="false" key="CASE_SENSITIVE"/>
 		<item value="false" key="STORE_SEARCH_INCREMENTAL"/>
 		<item value="false" key="STORE_SEARCH_WRAP"/>
@@ -19,16 +19,22 @@
 		<item value="false" key="IGNORE_WHITESPACE_SEARCH"/>
 		<item value="0" key="HISTORY_SIZE"/>
 		<list key="findhistory">
-			<item value="&gt;&gt;"/>
-			<item value="user already"/>
-			<item value="user"/>
-			<item value="errors"/>
+			<item value="temp"/>
+			<item value="form"/>
+			<item value="index"/>
 			<item value="cfdump"/>
-			<item value="validateName"/>
-			<item value="validate"/>
-			<item value="input"/>
+			<item value="="/>
+			<item value=","/>
+			<item value="key"/>
+			<item value="error"/>
 		</list>
 		<list key="replacehistory">
+			<item value="modifiedValue"/>
+			<item value="FORM"/>
+			<item value=" = "/>
+			<item value=" , "/>
+			<item value="fieldValue"/>
+			<item value="url"/>
 			<item value="cfinput"/>
 			<item value="input"/>
 		</list>
@@ -39,7 +45,7 @@
 	</section>
 	<section name="ReplaceDialog3">
 		<list key="replace_with">
-			<item value="cfinput"/>
+			<item value="modifiedValue"/>
 		</list>
 	</section>
 </section>

@@ -1,6 +1,0 @@
-window.onload = addHandlers();	
-function addHandlers()
-{
-	var firstName = $("email_address");
-	firstName.addEventListener("blur",checkWord);	
-	firstName.addEventListener("focus",clearErrors);

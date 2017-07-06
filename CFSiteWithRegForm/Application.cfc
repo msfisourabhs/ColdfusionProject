@@ -1,29 +1,40 @@
-﻿<cfcomponent output="false">
+﻿<!----	
+	Filename 		:	Application.cfc 
+ 	Functionality	:	Intialises the application data like cookies,datasources etc
+ 						Generates errors custom pages for all server wide errors
+	Creation Date	:	‎June ‎22, ‎2017, ‏‎2:42:59 PM
+---->
+
+<cfcomponent output="true">
+	
 	<cfset this.name = "ProjectColdFusion"/>
 	<cfset this.applicationTimeout = createTimespan(0,2,0,0)/>
 	<cfset this.datasource = "Project_DataSource"/>
 	<cfset this.sessionManagement = "yes"/>
 	<cfset this.sessionTimeout = createTimespan(0,0,10,0)/>
+	<cfset this.sessioncookie.disableupdate = true>
+	<cfset this.sessioncookie.httponly = true>
+	<cfset this.sessioncookie.secure = true>
+	<cfset this.sessioncookie.timeout = "1">
 	
-	<cffunction name="validateLogin" returntype="boolean" output="true" access="public" >
-		<cfargument name="email" required="true" type="string" >
-		<cfargument name="password" required="true" type="string" >	
-		<cfquery datasource="Project_DataSource" name="nmLogin" result="rsLogin">
-			SELECT uid 
-			FROM dbo.Users_Details
-			WHERE EmailAddress = '#email#' AND Password = '#password#'
-		</cfquery>>	
-		
-		<cfif rsLogin.recordCount EQ 1>
-			<cfquery datasource="Project_DataSource">
-				UPDATE dbo.Users_Details 
-				SET isActive = 1 
-				WHERE uid = #nmLogin.uid#
-			</cfquery>
-			<cfset session.id = #nmLogin.uid#>
-			<cfreturn true>
-		<cfelse>
-			<cfreturn false>	
-		</cfif>
+	<cffunction name = "onError" returntype = "void" access="public" >
+		<cfargument name = "exception" required = "true" type = "any" >
+		<cfargument name = "eventname" required = "true" type = "any" >	
+		<cfset errorMessage = "500<br> Internal Server Error occured.We are notifying our developers">
+		<cfinclude template = "errors/errorPage.cfm">
+		<!--- Log all errors. --->
+		<cflog file = "#This.Name#InternalServerError" type = "error" text = "Event Name: #Arguments.Eventname#"> 
+		<cflog file = "#This.Name#InternalServerError" type = "error" text = "Message: #Arguments.Exception.message#"> 
+		<cflog file = "#This.Name#InternalServerError" type = "error" text = "Stack Trace: #Arguments.Exception.StackTrace#"> 
+	</cffunction> 
+	
+	<cffunction name = "onMissingTemplate" returntype="void" access="public" >
+		<cfargument name = "targetPage" type = "string" required = true/>
+		<cfset errorMessage = "404<br>Oops! The page "& #targetPage# &" you were looking for was not found"> 
+		<cfinclude template = "errors/errorPage.cfm">
+		<!--- Log all errors. --->
+		<cflog file = "#This.Name#TyposError" type = "error" text = "Event Name: Page Not Found"> 
+		<cflog file = "#This.Name#TyposError" type = "error" text = "Message: #errorMessage#"> 
+
 	</cffunction>
 </cfcomponent>

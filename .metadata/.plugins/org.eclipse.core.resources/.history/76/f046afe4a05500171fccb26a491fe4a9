@@ -1,7 +1,0 @@
-﻿
-<cfquery datasource="Project_DataSource">
-	UPDATE dbo.Users_Details 
-	SET isActive = 0 
-	WHERE uid = #url.uid#	
-</cfquery>
-<cflocation url="login.cfm">
