@@ -22,32 +22,31 @@ $("#form").submit(function(event) {
 	}
 	$.getJSON('../components/formValidationService.cfc?method=validateAllFields&' + form.serialize() , function(result)
 	{
-		console.log(result);
 		lenObj = Object.keys(result).length;
 		for (var key in result) 
 		{
 			var temp = key.split("=");
-			var field = getErrorMessages(temp[0]);
-			if(result[key] !== field.previousElementSibling.innerHTML && result[key] !== "")
+			var field = document.getElementsByName(temp[0])[0];
+			if(result[key] === true)
+				generateErrors("",field);
+			else if(result[key] !== field.previousElementSibling.innerHTML && result[key] !== "" && result[key] !== false)
 				generateErrors(result[key], field);
-			if(result[key] === "")
+			else
 				counter++;
 				
 		}
 		$("#password").val(password);
 		$("#cpassword").val(cPassword);
 		
-		console.log(counter,lenObj);
 		if (counter === lenObj && validate()) 
 		{	
 			$("#form").unbind('submit').submit();
-			$("#form").attr("action","registerAction.cfm");
 			return true;
 		}
 		else
 		{
-			document.getElementById("val").innerHTML = "There were errors in your submission";
-			document.getElementById("val").setAttribute("class","valmssg");
+			document.getElementById("errorBox").innerHTML = "There were errors in your submission";
+			document.getElementById("errorBox").setAttribute("class","errorBox");
 			document.body.scrollTop = "0";
 	
 		}
@@ -111,6 +110,7 @@ function addHandlers()
 }
 function checkWord()
 {
+	var value = this;
 	if(checkEmptyAndSpaces.call(this))
 		return;
 	var counter=0;
@@ -124,19 +124,17 @@ function checkWord()
 	
 	if(counter !== len)
 		generateErrors("Name field dosen't contain letters",this);
-	var value = this;
 			
 	return;
 }
 function checkPass()
 {
-	
+	var value = this;
 	var pass = document.getElementsByName("user_password");
 	var cpass = document.getElementsByName("user_confirm_password");
 	checkEmptyAndSpaces.call(this);
 	if(pass[0].value !== cpass[0].value)
 		generateErrors("Passwords do not match",pass[0]);		
-	var value = this;
 
 	return;
 	
@@ -144,6 +142,7 @@ function checkPass()
 function checkNumber()
 {
 	
+	var value = this;
 	var counter = 0;
 	var len = this.value.length;
 	var pno = document.getElementsByName("phoneno");
@@ -168,12 +167,12 @@ function checkNumber()
 			generateErrors("Phone Number does not contain numbers",this);
 		
 	}
-	var value = this;
 	
 	return;
 }
 function checkEmail()
 {
+	var value = this;
 	
 	if(checkEmptyAndSpaces.call(this))
 		return;
@@ -236,7 +235,6 @@ function checkEmail()
 		generateErrors("Invalid Email Address",this);
 	
 	
-	var value = this;
 	
 	return;
 }
@@ -256,15 +254,15 @@ function generateErrors(errormssg,name)
 
 function clearErrors()
 {
-	var fs = document.getElementsByTagName('fieldset');
-	for(var i =0 ; i<fs.length;i++)
+	var fieldsets = document.getElementsByTagName('fieldset');
+	for(var i =0 ; i<fieldsets.length;i++)
 	{
-		for(var j =0;j<fs[i].childElementCount;j++)
+		for(var j =0;j<fieldsets[i].childElementCount;j++)
 		{
-			if(fs[i].children[j] === this)
+			if(fieldsets[i].children[j] === this)
 			{			
-                if(fs[i].children[j].previousElementSibling.classList.contains("errors"))
-					fs[i].children[j].previousElementSibling.remove();
+                if(fieldsets[i].children[j].previousElementSibling.classList.contains("errors"))
+					fieldsets[i].children[j].previousElementSibling.remove();
 			}
 		}
 	}
@@ -272,44 +270,44 @@ function clearErrors()
 }
 function createCaptcha()
 {
-	var cap = document.getElementById("captcha");
-	var opvalue = function(){
-		var op = parseInt(Math.random() * (4) + 1);
-		if(op === 1)
+	var captcha = document.getElementById("captcha");
+	var operatorValue = function(){
+		var operator = parseInt(Math.random() * (4) + 1);
+		if(operator === 1)
 			return "+";
-		else if(op === 2)
+		else if(operator === 2)
 			return "-";
-		else if(op === 3)
+		else if(operator === 3)
 			return "*";
 		else
 			return "/";
 	};
-	cap.innerHTML = parseInt(Math.random()*10 + 1) + opvalue() + parseInt(Math.random()*10 + 1);
-	document.getElementsByName('capval')[0].value = "";
+	captcha.innerHTML = parseInt(Math.random()*10 + 1) + operatorValue() + parseInt(Math.random()*10 + 1);
+	document.getElementsByName('captchaInput')[0].value = "";
 	
 }
 function checkCaptcha()
 {
-	var capmssg = document.getElementById("capmssg");
-	capmssg.style.visibility = "initial";
-	capmssg.style.display = "block";
+	var captchaMessage = document.getElementById("captchaMessage");
+	captchaMessage.style.visibility = "initial";
+	captchaMessage.style.display = "block";
 
-	if((document.getElementsByName("capval")[0].value) === parseInt(eval(document.getElementById("captcha").innerHTML)).toString())
+	if((document.getElementsByName("captchaInput")[0].value) === parseInt(eval(document.getElementById("captcha").innerHTML)).toString())
 	{
 		document.getElementById('submitbttn').removeAttribute('disabled');
-		capmssg.innerHTML = " &#10004 Captcha Input was Ok.You can Sign Up Now";
-		capmssg.style.color = "Green";
+		captchaMessage.innerHTML = " &#10004 Captcha Input was Ok.You can Sign Up Now";
+		captchaMessage.style.color = "Green";
 	}
 	else
 	{
 		document.getElementById("submitbttn").setAttribute("disabled","true");
-		capmssg.innerHTML = " &#10006 Captcha input was incorrect.Please try again.";
-		capmssg.style.color = "Red";
+		captchaMessage.innerHTML = " &#10006 Captcha input was incorrect.Please try again.";
+		captchaMessage.style.color = "Red";
 		createCaptcha();	
 	}
 	setTimeout(function(){
-		capmssg.style.visibility = "hidden";
-		capmssg.style.display = "none";
+		captchaMessage.style.visibility = "hidden";
+		captchaMessage.style.display = "none";
 	},5000);	
 
 }
@@ -317,18 +315,18 @@ function validate()
 {
 	
 	var counter = 0;
-	var lbl = document.getElementsByTagName('label');
+	var labels = document.getElementsByTagName('label');
 	var inputs = document.getElementsByTagName("input");
 	for(var iterator = 0;iterator<inputs.length;iterator++)
 	{
 		clearErrors.call(inputs[iterator]);
 		checkEmptyAndSpaces.call(inputs[iterator]);
 	}
-	for(var iterator = 0;iterator<lbl.length;iterator++)
+	for(var iterator = 0;iterator<labels.length;iterator++)
 	{
-		if(lbl[iterator].classList.contains("required"))
+		if(labels[iterator].classList.contains("required"))
 		{
-			if(lbl[iterator].nextElementSibling.classList.contains("errors"))
+			if(labels[iterator].nextElementSibling.classList.contains("errors"))
 				counter++;
 		}
 	}
@@ -342,8 +340,8 @@ function validate()
 	}
 	else
 	{
-		document.getElementById("val").innerHTML = "There were errors in your submission";
-		document.getElementById("val").setAttribute("class","valmssg");
+		document.getElementById("errorBox").innerHTML = "There were errors in your submission";
+		document.getElementById("errorBox").setAttribute("class","errorBox");
 		document.body.scrollTop = "0";
 	
 		return false;
@@ -354,13 +352,13 @@ function validate()
 function checkEmptyAndSpaces()
 {
 	
-	var val = this.value;
+	var fieldValue = this.value;
 	var len = this.value.length;
 	var temp = "";
 	for(iterator = 0 ; iterator < len ; iterator++)
 	{
-		if(val.charAt(iterator) !== " ")
-			temp +=  val.charAt(iterator).toString();
+		if(fieldValue.charAt(iterator) !== " ")
+			temp +=  fieldValue.charAt(iterator).toString();
 	}
 	this.value = temp;
 	if(temp.length === 0)
@@ -373,17 +371,5 @@ function checkEmptyAndSpaces()
 	
 }
     
-function getErrorMessages(name)
-{
-	
-	var error = $("input");
-	var len = error.length;
-	for (iterator = 0; iterator < len; iterator++) 
-	{
-		if (error[iterator].getAttribute("name") === name) {
-			return error[iterator];
-			console.log(error[iterator].innerHTML());
-		}
-	}
-}
+
 

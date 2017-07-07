@@ -16,7 +16,7 @@
 		
    </head>
    <body>
-		<p id="val"><p>
+		<p id="errorBox"><p>
       	<form id = "form" action="registerAction.cfm" method="post">
       
         <h1>Sign Up</h1>
@@ -85,11 +85,11 @@
         </fieldset>
         
         <strong>Captcha </strong><br><br>
-        	<label id="captcha" style="display:inline-block;padding:10px 40px 0px 40px"> num1 operand num2</label>
+        	<label id="captcha" style="display:inline-block;padding:10px 40px 0px 40px"></label>
         		<button type="button" type="refresh" style="width:30%;display:inline-block;float:right;" onclick="createCaptcha()">Refresh</button><br><br><br><br>
-        	<input type="text" name="capval" placeholder="Enter the result for Captcha" style="display:inline-block;width:60%">
+        	<input type="text" name="captchaInput" placeholder="Enter the result for Captcha" style="display:inline-block;width:60%">
        		 	<button type="button" type="Check" style="width:30%;display:inline-block;float:right" onclick="checkCaptcha()">Check</button>
-        	<label id="capmssg"></label>
+        	<label id="captchaMessage"></label>
         	<button type="submit" id="submitbttn" disabled >Sign Up</button>
 	
       </form>

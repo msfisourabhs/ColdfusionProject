@@ -1,4 +1,15 @@
-﻿<!---
+﻿<cfset mailAttributes = {
+server="smtp.gmail.com",
+username="sourav15sinha@gmail.com",
+password="1901melonss",
+from="sourav15sinha@gmail.com",
+to="sinha93sourabh@gmail.com",
+subject="Coldfusion Testing!"
+}
+/>
+
+<cfmail useTLS="true" attributeCollection="#mailAttributes#" >port 587, TLS enabled</cfmail>
+<!---
 <cfdump var="#sortLetters(Hash("pass","SHA-512"))#" >
 
 	<cffunction name="sortLetters" access="private" returntype="string" >

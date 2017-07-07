@@ -17,7 +17,7 @@
 		
 	</cffunction>
 	<!---Checks for empty fields and removes spaces in inputs--->
-	<cffunction name = "checkEmptyAndSpaces" access = "private" returntype = "string" output = "true" hint = "removes spaces and checks empty inputs">
+	<cffunction name = "checkEmptyAndSpaces" access = "remote" returntype = "boolean" returnformat = "JSON" output = "true" hint = "removes spaces and checks empty inputs">
 		<cfargument type = "string" required = "true" name = "fieldValue" hint = "field value to check for ">
 		<cfargument type = "string" required = "false" name = "field" hint = "field value">	
 	

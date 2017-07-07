@@ -27,32 +27,37 @@
 		<cfreturn false>
 	</cfif>
 </cffunction>
-
-<cfif StructKeyExists(SESSION,"validationToken") && verifyValidationToken()>	
-	
-	<cfquery datasource = "Project_DataSource" result = "rsUserExsists">
-		SELECT uid
-		FROM dbo.Users_Details
-		WHERE EmailAddress = '#form.user_email#'
-	</cfquery>
-	
+<cftry>
+	<cfif StructKeyExists(SESSION,"validationToken") && verifyValidationToken()>	
 		
-	<cfif rsUserExsists.RecordCount EQ 0>
-		<!---Input values in the databsse---> 
-		<cfset userDetails = CreateObject("component",'Projects.CFSiteWithRegForm.components.userDetailEntryService')>
-		<cfif NOT userDetails.insertFormDataIntoDB(form)>	
-			<cflocation url = "registerSuccess.cfm" addtoken = "false" >
+		<cfquery datasource = "Project_DataSource" result = "rsUserExsists">
+			SELECT uid
+			FROM dbo.Users_Details
+			WHERE EmailAddress = '#form.user_email#'
+		</cfquery>
+		
+			
+		<cfif rsUserExsists.RecordCount EQ 0>
+			<!---Input values in the databsse---> 
+			<cfset userDetails = CreateObject("component",'Projects.CFSiteWithRegForm.components.userDetailEntryService')>
+			<cfif NOT userDetails.insertFormDataIntoDB(form)>	
+				<cflocation url = "registerSuccess.cfm" addtoken = "false" >
+			<cfelse>
+				<cfset VARIABLES.errorMessage = "A Database error has occured">
+			</cfif>
 		<cfelse>
-			<cfset VARIABLES.errorMessage = "A Database error has occured">
+			<cfset VARIABLES.errorMessage = "User already exsists <a href=register.cfm> Click here to Register</a>">
+					
 		</cfif>
 	<cfelse>
-		<cfset VARIABLES.errorMessage = "User already exsists <a href=register.cfm> Click here to Register</a>">
-				
+		<cfset VARIABLES.errorMessage = "You need to register before you can submit any data">	
 	</cfif>
-<cfelse>
-	<cfset VARIABLES.errorMessage = "You need to register before you can submit any data">	
-</cfif>
-
-<cfif VARIABLES.errorMessage NEQ "">
-	<cfinclude template = "../errors/errorPage.cfm">
-</cfif>
+	
+	<cfif VARIABLES.errorMessage NEQ "">
+		<cfinclude template = "../errors/errorPage.cfm">
+	</cfif>
+<cfcatch name="missingField" type="any" >
+	<cfset VARIABLES.errorMessage = "The field " & missingField.element & " was not supplied">
+	<cfinclude template="../errors/errorPage.cfm" >
+</cfcatch>>
+</cftry>

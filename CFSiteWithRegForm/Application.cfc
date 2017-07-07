@@ -16,7 +16,7 @@
 	<cfset this.sessioncookie.httponly = true>
 	<cfset this.sessioncookie.secure = true>
 	<cfset this.sessioncookie.timeout = "1">
-	
+	<!---
 	<cffunction name = "onError" returntype = "void" access="public" >
 		<cfargument name = "exception" required = "true" type = "any" >
 		<cfargument name = "eventname" required = "true" type = "any" >	
@@ -27,7 +27,7 @@
 		<cflog file = "#This.Name#InternalServerError" type = "error" text = "Message: #Arguments.Exception.message#"> 
 		<cflog file = "#This.Name#InternalServerError" type = "error" text = "Stack Trace: #Arguments.Exception.StackTrace#"> 
 	</cffunction> 
-	
+	---->
 	<cffunction name = "onMissingTemplate" returntype="void" access="public" >
 		<cfargument name = "targetPage" type = "string" required = true/>
 		<cfset errorMessage = "404<br>Oops! The page "& #targetPage# &" you were looking for was not found"> 
