@@ -40,8 +40,11 @@
 							SET isActive = 1 
 							WHERE uid = #nmLoginActivity.uid#
 						</cfquery>
-						<cfset SESSION.id = #nmLoginActivity.uid#>
-						<cflocation url = "home.cfm" addtoken = "false" >
+						<cflock timeout="30" type="exclusive" >
+							<cfset SESSION.id = #nmLoginActivity.uid#>
+							
+						</cflock>
+						<cflocation url="home.cfm" addtoken="false" >
 					<cfelse>
 						<cfset VARIABLES.errorHeader = "Suspicious login detected">			
 					</cfif>

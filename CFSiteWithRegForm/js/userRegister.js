@@ -39,7 +39,7 @@ $("#form").submit(function(event) {
 		$("#password").val(password);
 		$("#cpassword").val(cPassword);
 		
-		if (validate() && counter === lenObj) 
+		if ( counter === lenObj && validate()) 
 		{	
 			$("#form").unbind('submit').submit();
 			return true;
