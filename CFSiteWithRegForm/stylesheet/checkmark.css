@@ -4,6 +4,21 @@
 	Creation Date	:	July ‎4, ‎2017, ‏‎10:12:53 AM
 
 */
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
 .checkmark {
   width: 200px;
   margin: 0 auto;

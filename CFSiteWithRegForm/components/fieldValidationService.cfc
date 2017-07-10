@@ -58,7 +58,7 @@
 					</cfif>
 			</cfloop>
 			<cfif #counter# NEQ #Len(ARGUMENTS.fieldValue)#>
-				<cfset #generateErrors(ARGUMENTS.field&"="&ARGUMENTS.fieldValue , "Name field dosen't contain letters")# />
+				<cfset #generateErrors(ARGUMENTS.field&"="&getModifiedFieldValue() , "Name field dosen't contain letters")# />
 			</cfif>	
 		</cfif>
 		<cfreturn VARIABLES.sChangeAndError/>
@@ -70,7 +70,7 @@
 	
 		<cfif NOT checkEmptyAndSpaces(ARGUMENTS.fieldValue , ARGUMENTS.field) >
 			<cfif NOT isValid("email" , ARGUMENTS.fieldValue)>
-				<cfset generateErrors(ARGUMENTS.field&"="&ARGUMENTS.fieldValue  , "Email address is not valid")>
+				<cfset generateErrors(ARGUMENTS.field&"="&getModifiedFieldValue()  , "Email address is not valid")>
 			</cfif>
 		</cfif>
 		<cfreturn VARIABLES.sChangeAndError>
@@ -84,7 +84,7 @@
 	
 		<cfif NOT checkEmptyAndSpaces(ARGUMENTS.fieldValue , ARGUMENTS.field) >
 			<cfif NOT isValid("telephone" , ARGUMENTS.fieldValue)>
-				<cfset generateErrors(ARGUMENTS.field&"="&ARGUMENTS.fieldValue , "Phone number is not valid ")>
+				<cfset generateErrors(ARGUMENTS.field&"="&getModifiedFieldValue() , "Phone number is not valid ")>
 			</cfif>
 		</cfif>
 		<cfreturn VARIABLES.sChangeAndError>
@@ -102,5 +102,19 @@
 			</cfif>
 		</cfif>
 		<cfreturn VARIABLES.sChangeAndError>
+	</cffunction>
+	<!---Function returns modified field Values --->
+	<cffunction name = "getModifiedFieldValue" access = "private" returntype = "string" hint = "Returns the modified field value"> 
+		<cfloop collection = "#VARIABLES.sChangeAndError#" item = "key">
+			<cfset LOCAL.temp = key.Split("=")>
+				
+			<cfif arrayLen(LOCAL.temp) EQ 2>
+				<cfset LOCAL.modifiedFieldValue = LOCAL.temp[2]>
+			<cfelse>
+				<cfset LOCAL.modifiedFieldValue = "">
+	
+			</cfif>
+		</cfloop>
+		<cfreturn LOCAL.modifiedFieldValue>		
 	</cffunction>
 </cfcomponent>

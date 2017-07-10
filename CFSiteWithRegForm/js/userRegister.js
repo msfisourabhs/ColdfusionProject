@@ -22,6 +22,7 @@ $("#form").submit(function(event) {
 	}
 	$.getJSON('../components/formValidationService.cfc?method=validateAllFields&' + form.serialize() , function(result)
 	{
+		console.log(result);
 		lenObj = Object.keys(result).length;
 		for (var key in result) 
 		{
@@ -38,7 +39,7 @@ $("#form").submit(function(event) {
 		$("#password").val(password);
 		$("#cpassword").val(cPassword);
 		
-		if (counter === lenObj && validate()) 
+		if (validate() && counter === lenObj) 
 		{	
 			$("#form").unbind('submit').submit();
 			return true;

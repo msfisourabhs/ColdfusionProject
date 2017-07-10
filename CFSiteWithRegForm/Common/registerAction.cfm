@@ -13,7 +13,7 @@
 	<cfset LOCAL.arrayFieldValues = StructKeyArray(form)>
 	<cfset #ArraySort(LOCAL.arrayFieldValues,"text")#>
 	<cfloop array = "#arrayFieldValues#" index = "fieldValue">
-		<cfif fieldValue NEQ "fieldnames" AND fieldValue NEQ "capval">			
+		<cfif fieldValue NEQ "fieldnames" AND fieldValue NEQ "captchainput">			
 			<cfif fieldValue EQ "user_password" OR fieldValue EQ "user_confirm_password">
 				<cfset LOCAL.formDataToHash = LOCAL.formDataToHash & LCase(Hash(form[fieldValue],"SHA-512" ))>
 			<cfelse>

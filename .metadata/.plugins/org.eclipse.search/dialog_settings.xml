@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="ColdFusion Search Dailog">
-		<item value="temp" key="SEARCH_TEXT"/>
+		<item value="cfdump" key="SEARCH_TEXT"/>
 		<item value="false" key="STORE_IS_RDS"/>
 		<item value="*" key="STORE_EXTENSIONS"/>
 		<item value="false" key="SEARCH_DERIVED"/>
 		<item value="false" key="STORE_IS_FTP"/>
 		<item value="1" key="SEARCH_SCOPE"/>
-		<item value="modifiedValue" key="REPLACE_TEXT"/>
+		<item value="captchaExpression" key="REPLACE_TEXT"/>
 		<item value="false" key="CASE_SENSITIVE"/>
 		<item value="false" key="STORE_SEARCH_INCREMENTAL"/>
 		<item value="false" key="STORE_SEARCH_WRAP"/>
@@ -19,24 +19,24 @@
 		<item value="false" key="IGNORE_WHITESPACE_SEARCH"/>
 		<item value="0" key="HISTORY_SIZE"/>
 		<list key="findhistory">
+			<item value="cfdump"/>
+			<item value="&gt;&gt;"/>
+			<item value="capmssg"/>
+			<item value="val"/>
 			<item value="temp"/>
 			<item value="form"/>
 			<item value="index"/>
-			<item value="cfdump"/>
 			<item value="="/>
-			<item value=","/>
-			<item value="key"/>
-			<item value="error"/>
 		</list>
 		<list key="replacehistory">
+			<item value="captchaExpression"/>
+			<item value="errorBox"/>
 			<item value="modifiedValue"/>
 			<item value="FORM"/>
 			<item value=" = "/>
 			<item value=" , "/>
 			<item value="fieldValue"/>
 			<item value="url"/>
-			<item value="cfinput"/>
-			<item value="input"/>
 		</list>
 	</section>
 	<section name="org.eclipse.search.text.CFFileSearchResultPage">
@@ -45,7 +45,7 @@
 	</section>
 	<section name="ReplaceDialog3">
 		<list key="replace_with">
-			<item value="modifiedValue"/>
+			<item value="captchaExpression"/>
 		</list>
 	</section>
 </section>
