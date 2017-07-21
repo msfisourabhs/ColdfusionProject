@@ -22,7 +22,6 @@ $("#form").submit(function(event) {
 	}
 	$.getJSON('../components/formValidationService.cfc?method=validateAllFields&' + form.serialize() , function(result)
 	{
-		console.log(result);
 		lenObj = Object.keys(result).length;
 		for (var key in result) 
 		{
